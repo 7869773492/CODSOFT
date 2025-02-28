@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+body {
+    background-image: url('background.jpg');  /* Replace with your image filename */
+    background-size: cover;   /* Ensures the image covers the full screen */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    height: 100vh;  /* Full height */
+    margin: 0;  /* Remove default margin */
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+header {
+    background: #77defd;
+    color: rgb(10, 10, 10);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 60%;
+    padding: 30px;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form h2 span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.contact-form p {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 80px;
+    resize: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Info */
+.contact-info {
+    width: 40%;
+    padding: 30px;
+    background: #77defd;
+    color: rgb(15, 15, 15);
+    text-align: center;
+}
+
+.contact-info img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* About Page */
+.about {
+    text-align: center;
+    padding: 50px;
+    background: white;
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about img {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}
